@@ -1,0 +1,111 @@
+/*body*/
+body{
+    background-color: mediumaquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/*header*/
+header{
+    background-color: blue;
+    border-style: double;
+    border-color: chartreuse;
+    border-width: 10px;
+    margin: 50 15 50 15;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+/*nav-bar*/
+.nav-bar{
+    list-style-type: none;
+    margin: 10;
+    padding: 5;
+    overflow: hidden;
+    background-color: darkturquoise;
+}
+.nav-list{
+    float: left;
+}
+.nav-list, a{
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.nav-list a:hover{
+    background-color: orange;
+}
+.red{
+    background-color: red;
+}
+.white{
+    background-color: white;
+}
+.bleu{
+    background-color: royalblue;
+}
+
+/*main*/
+main{
+    background-color: cornflowerblue;
+    border-style: ridge;
+    border-color: darkkhaki;
+    border-width: 10px;
+    margin: 0 auto;
+    width: 100;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+}
+ul, ol{
+    margin: 0 auto;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    border-style: dotted;
+    border-color: lawngreen;
+    margin: 10px;
+}
+@media(max-width: 750px){
+    h1{
+        font-size: 40px;
+}
+    h2, h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
+@media(min-width: 1024px){
+    body{
+        background-color: green;
+        color:darkred;
+    }
+    h1{
+        font-size: 25px;
+        line-height: 2;
+    }
+    h2, h3{
+        font-size: 20px;
+        line-height: 1;
+    }
+    p, li{
+        font-size: 14px;
+        line-height: 1;
+    }
+    .nav-list{
+        display: flex;
+        justify-content: center;
+    }
+   
+    
+}

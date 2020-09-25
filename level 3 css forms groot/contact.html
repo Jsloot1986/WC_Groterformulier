@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact formulier</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <!--headerbox-->
+<header class="border-header">
+    <h1 >Contact formulier</h1>
+</header>
+<nav>
+    <ul class="nav-bar">
+        <li class="nav-list"><a class="red" href="index.html">Home</a></li>
+        <li class="nav-list"><a class="white" href="about.html">Meer over</a></li>
+        <li class="nav-list"><a class="bleu" href="https://www.linkedin.com/in/jochum-sloot-25052111a/">Linkedin</a></li>
+    </ul>
+    
+</nav>
+<!--einde headerbox--> 
+<!--main-->
+<main class=border-main>
+    <h2>Laat ons weten wat je favoriete recept is?</h2>
+    <form name="contact" method="POST" data-netlify="true">
+        <p>
+            <label>Wat is je naam?<input type="text" name="name"/></label>
+        </p>
+        <p>
+            <label>Wat is je e-mail?<input type="email" name="email"/></label>
+        </p>
+        <p>
+            <label>Wat is je telefoonnummer?<input type="tel" name="telefoonnummer"/></label>
+        </p>
+        <p>
+            <label for="quantity">Wat is je leeftijd?<input type="number" id= "quantity"name="quantity" min="15" max="90"/></label>
+        </p>
+        <p>
+            <label for="birthday">Wat is je geboortedatum?<input type="date" id="birthday" name="birthday"/></label>
+        </p>
+        <p>
+            <input type="radio" id="male" name="gender" value="male"/>
+            <label for="male">Man</label><br>
+            <input type="radio" id="female" name="gender" value="female"/>
+            <label for="male">Vrouw</label><br>
+            <input type="radio" id="other" name="gender" value="other"/>
+            <label for="male">Anders</label>
+        </p>
+        <p>
+            <input type="checkbox" id="kitchen1" name="kitchen1" value="Frans"/>
+            <label for="kitchen1">Frans</label><br>
+            <input type="checkbox" id="kitchen2" name="kitchen2" value="Italiaans"/>
+            <label for="kitchen2">Italiaans</label><br>
+            <input type="checkbox" id="kitchen3" name="kitchen3" value="Spaans"/>
+            <label for="kitchen3">Spaans</label><br>
+            <input type="checkbox" id="kitchen4" name="kitchen4" value="Arabisch"/>
+            <label for="kitchen4">Arabisch</label>
+        </p>
+        <p>
+            <label for="favcolor">Kies je favoriete short kleur!</label>
+            <input type="color" id="favcolor" name="favcolor"/>
+        </p>
+        <p>
+            <label>Vertel iets over jou? Waarom dit recept/keuken. <textarea rows="10" cols="30" name="message">Biografie
+            </textarea></label>
+        </p>
+        <p>
+            <label for="myfile">Upload je laatste recept:</label>
+            <input type="file" id="myfile" name="myfile"/>
+        </p>
+        <p>
+            <label for="homepage">Wat is je website?</label>
+            <input type="url" id="homepage" name="homepage"/>
+        </p>
+        <p>
+            <button type="reset">Reset</button>
+        </p>
+        <p>
+            <button type="submit">Verzenden</button>
+        </p>
+    </form>
+</main>
+<!--Einde mainbox-->
+ <!--Footerbox-->
+ <footer>
+    <p>Copyright Jochum Sloot 2020</p>
+</footer>
+<!--einde footerbox-->
+</body>
+</html>
